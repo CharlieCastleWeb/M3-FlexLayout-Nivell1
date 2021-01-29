@@ -1,0 +1,159 @@
+/* 
+    ESTILS GENERALS 
+*/
+
+body {
+  margin: 0;
+  padding: 2em;
+}
+
+header,
+nav,
+article,
+aside,
+footer {
+  padding: 0.5em;
+  border: solid black 1.5em;
+}
+
+header {
+  border-bottom: solid black 0.4em;
+}
+
+nav {
+  border-top: solid black 0.4em;
+}
+
+nav,
+main {
+  margin-bottom: 2em;
+}
+
+div {
+  height: 2em;
+  margin: 1em;
+}
+
+article {
+  border-right: solid black 0.8em;
+}
+aside {
+  border-left: solid black 0.8em;
+}
+
+footer {
+  padding: 1.5em;
+}
+
+/* 
+    COLORS
+*/
+
+header {
+  background-color: #2d4059;
+}
+header div {
+  background-color: #ea5455;
+}
+
+nav {
+  background-color: #f07b3f;
+}
+nav div {
+  background-color: #fed460;
+}
+
+article {
+  background-color: #4e4e6a;
+}
+article div {
+  background-color: #1f6cb0;
+}
+article .lightblue {
+  background-color: #70a3c4;
+}
+
+aside {
+  background-color: #f73f52;
+}
+aside div {
+  background-color: #feea85;
+}
+
+footer {
+  background-color: #e6af2e;
+}
+
+/* 
+    LAYOUT 
+*/
+
+header {
+  display: flex;
+}
+
+.wide {
+  flex-grow: 4;
+}
+header div {
+  flex-grow: 1;
+}
+
+main {
+  display: flex;
+}
+
+article {
+  flex-grow: 4;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article div {
+  flex-grow: 4;
+  width: 40%;
+}
+
+aside {
+  flex-grow: 2;
+}
+
+/* 
+    MEDIA QUERIES 
+*/
+
+/* TABLET */
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+  main {
+    flex-direction: column;
+  }
+  article,
+  aside {
+    border-color: yellow;
+  }
+  article {
+    border-right-width: 1.5em;
+    border-bottom-width: 0.7em;
+  }
+  aside {
+    border-left-width: 1.5em;
+    border-top-width: 0.7em;
+  }
+}
+
+/* SMARTPHONE */
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  article {
+    border-bottom-width: 0.75em;
+  }
+  aside {
+    border-top-width: 0.75em;
+  }
+}
